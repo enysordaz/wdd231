@@ -100,15 +100,7 @@ const courses = [
     }
 ];
 
-/*
-    if (completed == true) {
-            card.style.color = "#5d288f";
-        } else {
-            card.style.backgroundColor = "white";
-        }
-*/
-
-
+// Functions with the array information
 createCoursesCard(courses);
 
 const allLink = document.querySelector('#all');
@@ -144,7 +136,7 @@ function removeActive() {
     wddLink.classList.remove('active');
 }
 
-
+//Displays the card with the courses
 function createCoursesCard(filteredCourses) {
     filteredCourses.forEach(course => {
         let card = document.createElement("li");
@@ -152,6 +144,7 @@ function createCoursesCard(filteredCourses) {
         
         name.textContent = course.subject + " " + course.number;
 
+        //Changes the style of the cards to identify courses completed and not completed
         if (course.completed == true) {
             card.style.backgroundColor = "#1f6924";
         } else {

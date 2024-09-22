@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Enys Ordaz Narvaez">
+    <meta name="description" content="WDD 231 - This is the first week activity, the course home page.">
+    <title>Enys Ordaz Narvaez</title>
+    <link rel="stylesheet" href="styles/homepage.css">
+    <script src="scripts/homepage.js" defer></script>
+    <!--Links to fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>WDD 231</h1>
+    <header>
+        <div class="title">
+            <img class="my-picture" src="images/profile.webp" alt="My profile">
+            <h1>Enys Ordaz Narvaez</h1>
+        </div>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="" target="_blank">Chamber</a>
+            <a href="https://github.com/enysordaz" target="_blank">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/enys-ordaz-narv%C3%A1ez-5a167b252/" target="_blank">LinkedIn</a>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <h2 class="section-header">Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="second">
+            <h2 class="section-header">Utah, USA</h2>
+            <img src="images/utay-arches.webp" alt="Utah arches and snow">
+            <figcaption>Utah Arches and snow</figcaption>
+        </section>
+        <section class="third">
+            <h2 class="section-header">Web and Computer Programming Certificate</h2>
+            <div>
+                <div class="options">
+                    <a href="#" id="all" class="active">All</a>
+                    <a href="#" id="cse">CSE</a>
+                    <a href="#" id="wdd">WDD</a>
+                </div>
+                <div class="container">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>
+            ©<span id="currentyear"></span> | 💜 Enys Ordaz 💜 | Utah
+            </p> 
+            <p id="lastModified">
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
+
+<!--Things to figure out that are missing:
+
+- Make the courses display in the page 
+
+-->

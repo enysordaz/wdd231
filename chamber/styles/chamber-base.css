@@ -1,0 +1,220 @@
+/*-----BASE ELEMENTS AND HOME PAGE---------*/
+:root {
+    --background-color: #ffff;
+    --note-color: #676767;
+    --required-color: #6f200e;
+    --text-light-color: #fff;
+    --text-dark-color: #000000;
+    --primary-color: #031730;
+    --secondary-color: #006A94;
+    --accent1-color: #5497AA;
+    --accent2-color: #FEAB83;
+    --accent3-color: #FFD686;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    justify-content: center;
+    align-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*-----HEADER ELEMENTS---------*/
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: end;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+img {
+    width: 44px;
+    grid-column: 1/3;
+}
+
+.city-logo {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    grid-column: 2/3;
+}
+
+span {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    grid-column: 1/3;
+}
+
+/* Navigation elements */
+nav {
+    background-color: var(--primary-color);
+}
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-dark-color);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--text-light-color);
+    text-decoration: none;
+    text-align: center;
+}
+
+ul.menuLinks a:hover {
+    background-color: var(--accent3-color);
+    color: var(--text-dark-color);
+}
+
+li.current-menu-item a {
+    background-color: var(--secondary-color);
+}
+
+ul.menuLinks {
+    list-style-type: none;
+}
+
+#myButton.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {overflow:hidden}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+/*-----MAIN ELEMENTS---------*/
+  
+header,
+main,
+footer {
+    margin: 1rem;
+    position: relative;
+}
+  
+h2 {
+    color: #3e347d;
+    margin: 0 0 1rem 0;
+    border-bottom: 1px solid #bbb;
+}
+  
+h3 {
+    margin: 0;
+}
+  
+p {
+    margin: 0;
+}
+  
+main {
+    margin-left: 2rem;
+}
+  
+#company-cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+#company-cards.list {
+    display: block;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.member-card img {
+    max-width: 100px;
+    height: auto;
+}
+  
+section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: #d8cce7;
+    border: 1px solid #9b95b5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section > p {
+    min-height: 40px;
+}
+  
+li > img {
+    width: auto;
+    height: 30px;
+}
+  
+footer {
+    border-top: 1px solid #555555;
+    padding: 20px;
+    text-align: center;
+}
+
+/*-----FOOTER ELEMENTS---------*/
+
+
+
+/*-----LARGER VIEWS---------*/
+
+@media only screen and (min-width: 38rem) {
+    .city-logo {
+        font-size: 3rem;
+        color: var(--primary-color);
+    }
+
+    span {
+        font-size: 2rem;
+    }
+
+    #myButton {
+        display: none;
+        color: var(--primary-color);
+    }
+
+    ul.menuLinks, 
+    ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+}

@@ -5,7 +5,7 @@
             "address": "54 N Main St Suite A, Heber City, UT 84032",
             "number": "435-657-9679",
             "websiteurl": "https://ignitioncreative.group/",
-            "imageurl": "https://lh3.googleusercontent.com/p/AF1QipOR0x44a_BMpGpOoMuj6F_B8Bo5LeEhXtPIGU5Y=s680-w680-h510",
+            "imageurl": "chamber/images/icg-logo.webp",
             "membershiplevel": 1,
             "service": "Business Services"
         },
@@ -14,7 +14,7 @@
             "address": "150 North Main Street, Suite 105, Heber City, Utah 84032",
             "number": "435-709-5201",
             "websiteurl": "https://wasatchwell.com/",
-            "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBECwsk3-OnlHz0qBT372COurj4B7etOf9eQ&s",
+            "imageurl": "chamber/images/wasatch-wellness.webp",
             "membershiplevel": 1,
             "service": "Fitness, Health, and Wellness"
         },
@@ -23,7 +23,7 @@
             "address": "20 North Main Street, Heber City, UT 84032",
             "number": "435-654-2773",            
             "websiteurl": "https://www.zionsbank.com/personal/",
-            "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDiZWe8gll1jEbJPtwJhxRo-md326eO_Graw&s",
+            "imageurl": "chamber/images/zionsbank-logo.webp",
             "membershiplevel": 3,
             "service": "Financial Services"
         },
@@ -32,7 +32,7 @@
             "address": "2460 Kilby Road, Park City, Utah 84098",
             "number": "801-234-9230",
             "websiteurl": "https://www.highvalleytransit.org/",
-            "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qo2_1Eny6jUsAjB6hepotUzxkbXQpknieA&s",
+            "imageurl": "chamber/images/hvt-logo.webp",
             "membershiplevel": 1,
             "service": "Transportation"
         },
@@ -41,7 +41,7 @@
             "address": "465 East 1200 South, Heber City, Utah 84032",
             "number": "435-654-1511",
             "websiteurl": "https://wasatchlibrary.org/",
-            "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9JCDJ8xHv0gTwKXKhJh1CX26GDJSWiYnrHg&s",
+            "imageurl": "chamber/images/wasatchlib-logo.webp",
             "membershiplevel": 1,
             "service": "Goverment and Community Services"
         },
@@ -50,7 +50,7 @@
             "address": "Highway 40 - Daniels Summit Pass 15 Miles Southeast of Heber City, Heber City, Utah 84032",
             "number": "435-548-2300",
             "websiteurl": "https://www.danielssummit.com/",
-            "imageurl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/24/43/26/daniels-summit-lodge.jpg?w=700&h=-1&s=1",
+            "imageurl": "chamber/images/daniels-summit-lodge.webp",
             "membershiplevel": 1,
             "service": "Places to stay"
         },
@@ -59,7 +59,7 @@
             "address": "322 East Gateway Drive, Suite 201, Heber City, Utah 84032",
             "number": "435-657-0984",
             "websiteurl": "https://heberlawyers.com/",
-            "imageurl": "https://www.earthdiver.com/cdn-cgi/image/width=800,quality=75,format=auto/https://assets.earthdiver.com/media/media-2727198.jpg",
+            "imageurl": "chamber/images/logo.webp",
             "membershiplevel": 2,
             "service": "Professional Services"
         },
@@ -68,7 +68,7 @@
             "address": "99 East Main Street, Midway, Utah 84049",
             "number": "435-315-4151",
             "websiteurl": "https://www.midwaymercantile.com/",
-            "imageurl": "https://images.sirved.com/ChIJlcr7PawKUocRHrsYQVfs5AU/gaYYVtdRaF.png",
+            "imageurl": "chamber/images/midway-logo.webp",
             "membershiplevel": 3,
             "service": "Places to eat"
         },
@@ -77,7 +77,7 @@
             "address": "2002 Soldier Hollow Lane, Midway, Utah 84032",
             "number": "435-654-2002",
             "websiteurl": "https://utaholympiclegacy.org/location/soldier-hollow/",
-            "imageurl": "https://www.nowplayingutah.com/wp-content/uploads/sites/www.nowplayingutah.com/images/2023/01/sohologo.jpg",
+            "imageurl": "chamber/images/soho-logo.webp",
             "membershiplevel": 1,
             "service": "Non-Profit Organizations"
         }

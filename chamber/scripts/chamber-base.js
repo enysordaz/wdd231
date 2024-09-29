@@ -8,67 +8,78 @@ hamburgerMenu.addEventListener('click', () => {
 });
 
 // Footer dates and update
+const year = document.querySelector('#currentyear');
+const today = new Date();
+year.innerHTML = today.getFullYear();
 
+// getting the last day modified  
+const lastModified = document.querySelector('#lastModified');
+lastModified.innerHTML = document.lastModified;
 
 // Main Directory Section
 
-/*
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.getElementById('company-cards');
-    const gridViewButton = document.getElementById('view-grid');
-    const listViewButton = document.getElementById('view-list');
+    const companyCardsDiv = document.getElementById('company-cards');
+    const viewGridButton = document.getElementById('view-grid');
+    const viewListButton = document.getElementById('view-list');
     let membersData = [];
 
-    async function getMembersData(){
+    // Fetch members data
+    async function getMembersData() {
         try {
             const response = await fetch('data/members.json');
             if (!response.ok) {
-                throw new Error('Network Response was not ok');
+                throw new Error('Network response was not ok');
             }
             membersData = await response.json();
             displayMembers();
-        }catch (error) {
-            console.error('There has been a problem with the Fetch operation', error);
+        } catch (error) {
+            console.error('There has been a problem with your fetch operation:', error);
         }
     }
 
+    // Render members function
     function displayMembers(viewType = 'grid') {
-        cards.innerHTML = '';
-        cards.className = '';
+        companyCardsDiv.innerHTML = '';
+        companyCardsDiv.className = '';
 
-        cards.classList.add(viewType);
+        companyCardsDiv.classList.add(viewType);
 
-        membersData.forEach (members => {
-            const memberCard = document.createElement('section');
+        membersData.forEach(member => {
+            const memberCard = document.createElement('div');
             memberCard.classList.add('member-card');
-    
+
             memberCard.innerHTML = `
-                <img src="${members.imageurl}" alt="${members.name} Logo" class="member-logo">
-                <h3>${members.name}</h3>
-                <p>Address: ${members.address}</p>
-                <p>Phone Number: ${members.number}</p>
-                <p><a href="${members.websiteurl}" target="_blank">Company Website</a></p>
-                <p>Membership Level: ${members.membershiplevel}</p>
-                <p>Service: ${members.service}</p>
+                <img src="${member.imageurl}" alt="${member.name} Logo" class="member-logo">
+                <h2>${member.name}</h2>
+                <p>ADDRESS: ${member.address}</p>
+                <p>PHONE: ${member.phone}</p>
+                <p><a href="${member.website}" target="_blank">Company Website</a></p>
+                <p>Membership Level: ${member.membershiplevel}</p>
+                <p>Service: ${member.service}</p>
             `;
-    
-            cards.appendChild(memberCard);
+
+            companyCardsDiv.appendChild(memberCard);
         });
     }
 
-    gridViewButton.addEventListener('click', () => {
+    // Event listeners for view toggles
+    viewGridButton.addEventListener('click', () => {
         displayMembers('grid');
     });
 
-    listViewButton.addEventListener('click', () => {
+    viewListButton.addEventListener('click', () => {
         displayMembers('list');
     });
 
+    // Initial fetch
     getMembersData();
 });
-*/
 
 
+
+
+/*
 const cards = document.querySelector('#cards');
 
 async function getMembersData(){
@@ -108,3 +119,4 @@ const displayMembers = (members) => {
         cards.appendChild(card);
     });
 }
+*/

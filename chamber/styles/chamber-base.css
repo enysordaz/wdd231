@@ -117,46 +117,23 @@ nav.open {
 }
 /*-----MAIN ELEMENTS---------*/
   
-.main-section{
-    padding:2rem;
-}
-
-.main-title {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding:1rem;
-}
-.main-title div {
-    display:flex;
-    justify-content:flex-end;
-    gap:2rem;
-}
-.main-title div button {
-    padding:1rem;
+.hero-section {
+    font-size: 50px;
+    text-align: center;
 }
 
 
-#company-cards.grid {
+#company-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
 }
 
-#company-cards.list {
-    display: block;
+section h2{
+    color: var(--primary-color);
 }
 
-.member-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-}
 
-.member-card img {
-    max-width: 100px;
-    height: auto;
-}
   
 
 

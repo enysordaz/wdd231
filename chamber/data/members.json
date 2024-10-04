@@ -5,8 +5,8 @@
             "address": "54 N Main St Suite A, Heber City, UT 84032",
             "number": "435-657-9679",
             "websiteurl": "https://ignitioncreative.group/",
-            "imageurl": "chamber/images/icg-logo.webp",
-            "membershiplevel": 1,
+            "imageurl": "images/icg-logo.webp",
+            "membershipLevel": 1,
             "service": "Business Services"
         },
         {
@@ -14,8 +14,8 @@
             "address": "150 North Main Street, Suite 105, Heber City, Utah 84032",
             "number": "435-709-5201",
             "websiteurl": "https://wasatchwell.com/",
-            "imageurl": "chamber/images/wasatch-wellness.webp",
-            "membershiplevel": 1,
+            "imageurl": "images/wasatch-wellness.webp",
+            "membershipLevel": 1,
             "service": "Fitness, Health, and Wellness"
         },
         {
@@ -23,8 +23,8 @@
             "address": "20 North Main Street, Heber City, UT 84032",
             "number": "435-654-2773",            
             "websiteurl": "https://www.zionsbank.com/personal/",
-            "imageurl": "chamber/images/zionsbank-logo.webp",
-            "membershiplevel": 3,
+            "imageurl": "images/zionsbank-logo.webp",
+            "membershipLevel": 3,
             "service": "Financial Services"
         },
         {
@@ -32,8 +32,8 @@
             "address": "2460 Kilby Road, Park City, Utah 84098",
             "number": "801-234-9230",
             "websiteurl": "https://www.highvalleytransit.org/",
-            "imageurl": "chamber/images/hvt-logo.webp",
-            "membershiplevel": 1,
+            "imageurl": "images/hvt-logo.webp",
+            "membershipLevel": 1,
             "service": "Transportation"
         },
         {
@@ -41,8 +41,8 @@
             "address": "465 East 1200 South, Heber City, Utah 84032",
             "number": "435-654-1511",
             "websiteurl": "https://wasatchlibrary.org/",
-            "imageurl": "chamber/images/wasatchlib-logo.webp",
-            "membershiplevel": 1,
+            "imageurl": "images/wasatchlib-logo.webp",
+            "membershipLevel": 1,
             "service": "Goverment and Community Services"
         },
         {
@@ -50,8 +50,8 @@
             "address": "Highway 40 - Daniels Summit Pass 15 Miles Southeast of Heber City, Heber City, Utah 84032",
             "number": "435-548-2300",
             "websiteurl": "https://www.danielssummit.com/",
-            "imageurl": "chamber/images/daniels-summit-lodge.webp",
-            "membershiplevel": 1,
+            "imageurl": "images/daniels-summit-lodge.webp",
+            "membershipLevel": 1,
             "service": "Places to stay"
         },
         {
@@ -59,8 +59,8 @@
             "address": "322 East Gateway Drive, Suite 201, Heber City, Utah 84032",
             "number": "435-657-0984",
             "websiteurl": "https://heberlawyers.com/",
-            "imageurl": "chamber/images/logo.webp",
-            "membershiplevel": 2,
+            "imageurl": "images/logo.webp",
+            "membershipLevel": 2,
             "service": "Professional Services"
         },
         {
@@ -68,8 +68,8 @@
             "address": "99 East Main Street, Midway, Utah 84049",
             "number": "435-315-4151",
             "websiteurl": "https://www.midwaymercantile.com/",
-            "imageurl": "chamber/images/midway-logo.webp",
-            "membershiplevel": 3,
+            "imageurl": "images/midway-logo.webp",
+            "membershipLevel": 3,
             "service": "Places to eat"
         },
         {
@@ -77,8 +77,8 @@
             "address": "2002 Soldier Hollow Lane, Midway, Utah 84032",
             "number": "435-654-2002",
             "websiteurl": "https://utaholympiclegacy.org/location/soldier-hollow/",
-            "imageurl": "chamber/images/soho-logo.webp",
-            "membershiplevel": 1,
+            "imageurl": "images/soho-logo.webp",
+            "membershipLevel": 1,
             "service": "Non-Profit Organizations"
         }
     ]

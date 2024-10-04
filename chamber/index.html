@@ -15,8 +15,8 @@
 
 
     <meta name="author" content="Enys Ordaz Narvaez">
-    <meta name="description" content="Chamber of Commerce - Directory Page with the list of Bussinesses.">
-    <title>Directory</title>
+    <meta name="description" content="Chamber of Commerce - Home Page with the main information.">
+    <title>Home</title>
     <link rel="stylesheet" href="styles/chamber-base.css">
     <script src="scripts/chamber-base.js" defer></script>
     <link rel="icon" href="favicon-heber.ico">
@@ -30,14 +30,14 @@
 </head>
 <body>
     <header class="title">
-        <img class="img-logo" src="images/light-logo.webp" alt="Heber Chamber of Commerce logo">
+        <img src="images/light-logo.webp" alt="Heber Chamber of Commerce logo">
         <span class="city-logo">Heber <span>Chamber of Commerce</span></span>
         <button id="myButton"></button>
     </header>
     <nav id="animateMe">
         <ul class="menuLinks">
-            <li><a href="#" title="Home">Home</a></li>
-            <li class="current-menu-item"><a href="#">Directory</a></li>
+            <li class="current-menu-item"><a href="#" title="Home">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
@@ -49,19 +49,17 @@
                 <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
                 <img src="images/hero-small.webp" alt="Mt. Timpanogos at Heber Utah" width="500" height="250">
             </picture>
-            <h1>Directory</h1>
+            <a href="#"><button class="call-action">Become a Member</button></a>
+            <h1>Home</h1>
         </section>
         <section class="bussiness">
-            <div class="options">
-                <h2>Our Members</h2>
+            <div>
                 <button id="grid" aria-label="Grid View">Grid View</button>
                 <button id="list" aria-label="List View">List View</button>
             </div>
-            <article class="grid">
-                <div id="company-cards">
+            <div id="company-cards">
                 
-                </div>
-            </article>
+            </div>
         </section>
     </main>
     <footer>

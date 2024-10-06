@@ -19,6 +19,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles/chamber-base.css">
     <script src="scripts/chamber-base.js" defer></script>
+    <script src="scripts/home.js" defer></script>
     <link rel="icon" href="favicon-heber.ico">
     <!-- Link to Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,28 +50,73 @@
                 <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
                 <img src="images/hero-small.webp" alt="Mt. Timpanogos at Heber Utah" width="500" height="250">
             </picture>
-            <a href="#"><button class="call-action">Become a Member</button></a>
+            <a href="#"><button class="action">Become a Member</button></a>
             <h1>Home</h1>
         </section>
+        <section class="home-grid">
+            <section class="event-container">
+                <h2>Events</h2>
+            </section>
+            <section class="weather-container">
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <div class="info-img">
+                        <img id="weather-icon" src="" alt="">
+                    </div>
+                    <div class="info-text">
+                        <span id="current-temp"></span>
+                        <p id="caption"></p>
+                        <p id="high"></p>
+                        <p id="low"></p>
+                        <p id="humidity"></p>
+                        <p id="sunrise"></p>
+                        <p id="sunset"></p>
+                    </div>
+                    
+                </div>
+                
+                
+            </section>
+            <section class="forecast-container">
+                <h2>Weather Forcast</h2>
+                <div class="weather-info">
+                    <div class="info-text">
+                        <p id="today"></p>
+                        <p id="next-day"></p>
+                        <p id="two-days"></p>
+                        
+                    </div>
+                    
+                </div>
+            </section>
+        </section>
         <section class="bussiness">
-            <div>
-                <button id="grid" aria-label="Grid View">Grid View</button>
-                <button id="list" aria-label="List View">List View</button>
-            </div>
-            <div id="company-cards">
+            <div id="gold-cards">
                 
             </div>
         </section>
     </main>
     <footer>
-        <div>
-            <p>
-            ©<span id="currentyear"></span>
-            </p> 
-            <p id="lastModified">
-            </p>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>Heber Chamber of Commerce</h4>
+                <p>540 Burnside Avenue</p>
+                <p>Heber City, UT 84032</p>
+                <p>info@hebercc.org</p>
+                <p>435-503-8991</p>
+            </div>
+            <div class="icons">
+
+            </div>
+            <div class="dynamic">
+                <p>©<span id="currentyear"></span></p>
+                <p> Heber Chamber of Commerce | Heber City Utah </p>
+                
+                <p id="lastModified"></p>
+                
+            </div>
         </div>
-        Heber Chamber of Commerce | Heber City Utah 
+        
     </footer>
 </body>
 </html>

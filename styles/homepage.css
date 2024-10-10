@@ -55,19 +55,24 @@ header {
   display: flex;
   flex-direction: row;
   text-align: center;
+  
 }
 
 .my-picture {
   width: auto;
   height: 100px;
   grid-column: 1/2;
+  animation: 4s alternate slidein;
 }
+
+
 
 h1 {
   font-weight: 800;
   padding: 5px;
   margin: 5px;
   margin-top: 15px;
+  animation: 4s alternate slidein;
 }
 
 nav {
@@ -154,6 +159,7 @@ section {
   padding: 1rem;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  
 }
 
 /*First section rules*/
@@ -259,6 +265,34 @@ section {
   width: 90%;
 }
 
+/*Dialog styling*/
+dialog {
+  border: 1px solid var(--primary-color);
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: var(--background-color);
+  box-shadow: 0 0 3rem var(--primary-color);
+  width: 90%;
+  max-width: 700px;
+  align-self: center;
+  text-align: center;
+}
+
+::backdrop {
+  background-color: #5d288f7d;
+}
+
+dialog button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  padding: .5rem 1rem;
+  border: 1px solid var(--required-color);
+  border-radius: 4px;
+  background-color: var(--required-color);
+  color: var(--text-color);
+}
+
 /*-----Footer---------*/
 footer {
   display: grid;
@@ -326,4 +360,17 @@ footer {
     margin-right: 0px;
   }
   
+}
+
+/*--- Animations ---*/
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
 }

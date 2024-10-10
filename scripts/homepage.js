@@ -157,7 +157,47 @@ function createCoursesCard(filteredCourses) {
         card.appendChild(name);
 
         document.querySelector(".container").appendChild(card);
+
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
     });
 }
 
+// Function to display the Modal in HTML
+function displayCourseDetails(course) {
+    const courseDetails = document.querySelector('#course-details');
+    const closeInfo = document.createElement('button');
+    const subjectNum = document.createElement('h2');
+    const title = document.createElement('h3');
+    const credits = document.createElement('p');
+    const description = document.createElement('p');
+    const certificate = document.createElement('p');
+    const techInfo = document.createElement('p');
 
+
+    courseDetails.innerHTML = '';
+    closeInfo.textContent = `X`
+    subjectNum.innerHTML =  `${course.subject} ${course.number}`;
+    title.innerHTML = `${course.title}`;
+    credits.innerHTML = `<strong>Credits</strong>: ${course.credits}`;
+    description.innerHTML = `${course.description}`;
+    certificate.innerHTML = `${course.certificate}`;
+    techInfo.innerHTML = `<strong>Technologies</strong>: ${course.technology.join(', ')}`;
+
+    courseDetails.appendChild(closeInfo);
+    courseDetails.appendChild(subjectNum);
+    courseDetails.appendChild(title);
+    courseDetails.appendChild(credits);
+    courseDetails.appendChild(description);
+    courseDetails.appendChild(certificate);
+    courseDetails.appendChild(techInfo);
+    
+    courseDetails.showModal();
+
+    closeInfo.addEventListener("click", () => {
+        courseDetails.close();
+    });
+
+    
+}

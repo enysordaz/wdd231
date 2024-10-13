@@ -8,7 +8,7 @@ const weatherHumidity = document.querySelector('#humidity');
 const weatherSunrise = document.querySelector('#sunrise');
 const weatherSunset = document.querySelector('#sunset');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=40.50&units=imperial&lon=-111.41&appid=3fef4e8fc26d6a0637a69b14d806dfc3'
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=40.49&units=imperial&lon=-111.41&appid=3fef4e8fc26d6a0637a69b14d806dfc3'
 
 
 async function apiFetch() {
@@ -44,7 +44,80 @@ async function apiFetch() {
 apiFetch();
 
 //Forecast Information
-const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.50&units=imperial&lon=-111.41&appid=3fef4e8fc26d6a0637a69b14d806dfc3'
+const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.49&lon=-111.41&units=imperial&appid=3fef4e8fc26d6a0637a69b14d806dfc3'
+
+const now = document.querySelector('#today');
+const nextDay = document.querySelector('#next-day');
+const twoDays = document.querySelector('#two-days');
+
+const today = new Date();
+const tomorrow = new Date(today);
+const afterTomorrow = new Date(today);
+
+const todayDateTest = '2024-10-10 15:00:00'
+const todayDate = forecastDateWithTime(today);
+const tomorrowDate = forecastDateWithTime(addDays(tomorrow, 1));
+const afterTomorrowDate = forecastDateWithTime(addDays(afterTomorrow, 2));
+
+
+function forecastDateWithTime(date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    const hours = String(date.getHours()).padStart(2, '0');
+    
+    return `${year}-${month}-${day} ${hours}:00:00`;
+}
+
+function addDays(date, days) {
+    const result = new Date(date);
+    result.setDate(result.getDate() + days);
+    return result;
+}
+  
+function adjustNext3Hour(date) {
+    const hours = date.getHours();
+    
+    if (hours < 15) {
+        date.setHours(15, 0, 0, 0);
+    } else if (hours >= 15 && hours < 18) {
+        date.setHours(18, 0, 0, 0);
+    } else if (hours >= 18 && hours < 21) {
+        date.setHours(21, 0, 0, 0);
+    } else {
+        date.setHours(0, 0, 0, 0);
+        date.setDate(date.getDate() + 1);
+    }
+}
+
+    
+function displayForecastResults(data) {
+    console.log(todayDate);
+    console.log(tomorrowDate);
+    console.log(afterTomorrowDate);
+    data.list.forEach( item => {
+        console.log(todayDate);
+        
+        const roundedTemp = Math.round(item.main.temp);
+    
+        if (item.dt_txt === todayDateTest) {
+            now.innerHTML = `Today: ${roundedTemp}&deg;F`;
+        } else if (item.dt_txt === tomorrowDate) {
+            const tomorrowDayName = getWeekdayName(tomorrowDate);
+            nextDay.innerHTML = `${tomorrowDayName}: ${roundedTemp}&deg;F`;
+        } else if (item.dt_txt === afterTomorrowDate) {
+            const afterTomorrowDayName = getWeekdayName(afterTomorrowDate);
+            twoDays.innerHTML = `${afterTomorrowDayName}: ${roundedTemp}&deg;F`;
+        }
+    });
+}
+
+function getWeekdayName(dateStr) {
+    const date = new date(dateStr);
+    const options = { weekday: 'long'};
+    return date.toLocalDateStr('en-US', options);
+
+}
 
 async function apiFetchForecast() {
     try {
@@ -52,6 +125,7 @@ async function apiFetchForecast() {
       if (response.ok) {
         const data = await response.json();
         console.log(data);
+        console.log(data.weather)
         displayForecastResults(data); 
       } else {
           throw Error(await response.text());
@@ -60,15 +134,11 @@ async function apiFetchForecast() {
         console.log(error);
     }
 
-    function displayForecastResults(data) {
-        //Weather container or section
-        console.log('hello');
-
-
-    }
-
+    adjustNext3Hour(today);
+    tomorrow.setHours(15, 0, 0, 0);
+    afterTomorrow.setHours(15, 0, 0, 0);    
 }
-  
+
 apiFetchForecast();
 
 

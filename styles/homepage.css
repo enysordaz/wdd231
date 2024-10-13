@@ -265,6 +265,11 @@ section {
   width: 90%;
 }
 
+/*--- JOIN PAGE ---*/
+.join-page{
+  display: grid;
+  grid-template-columns: 900px auto;
+}
 /*Dialog styling*/
 dialog {
   border: 1px solid var(--primary-color);

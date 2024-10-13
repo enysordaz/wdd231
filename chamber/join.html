@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Chamber of Commerce Landing/Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1696912161679-d29f261b38ae?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://enysordaz.github.io/wdd231/chamber/directory.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="Chamber of Commerce - Directory Page with the list of Bussinesses.">
+    <!-- Essential for Course Audit-->
+    <meta name="author" content="Enys Ordaz Narvaez">
+    <meta name="description" content="Chamber of Commerce - Home Page with the main information.">
+    <title>Join</title>
+    <!-- Styles link-->
+    <link rel="stylesheet" href="styles/chamber-base.css">
+    <link rel="stylesheet" href="styles/chamber-base-large.css">
+    <link rel="icon" href="favicon-heber.ico">
+    <!-- Scripts link -->
+    <script src="scripts/chamber-base.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <!-- Link to Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="title">
+        <img src="images/light-logo.webp" alt="Heber Chamber of Commerce logo">
+        <span class="city-logo">Heber <span>Chamber of Commerce</span></span>
+        <button id="menu"></button>
+    </header>
+    <nav id="animateMe">
+        <ul class="menuLinks">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current-menu-item"><a href="join.html">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Join</h1>
+        <div class="join-page">
+            <section>
+                <h2>Membership Application Form</h2>
+                <form method="get" action="thankyou.html" class="pform">
+                    
+                    <fieldset>
+                        <label>
+                            First Name <span class="required-sign">*</span>
+                        </label>
+                        <input type="text" id="user" name="user" title="Your First name" autocomplete="given-name" required >
+                    </fieldset>
+                    <fieldset>
+                        <label>
+                            Last Name <span class="required-sign">*</span>
+                        </label>
+                        <input type="text" id="last-name" name="last-name" title="Your last name" autocomplete="family-name" required>
+                    </fieldset>
+                    <fieldset>
+                        <label>
+                            Organizational Title <span class="note">(optional)</span>
+                        </label>
+                        <input type="text" id="title-org" name="title-org" title="Your organizational title in your business" autocomplete="organization-title">
+                    </fieldset>
+                    <fieldset>
+                        <label>
+                            E-mail <span class="required-sign">*</span>
+                        </label>
+                        <input type="email" id="email" name="email" title="Email to contact your business" autocomplete="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <label>
+                            Phone Number <span class="required-sign">*</span>
+                        </label>
+                        <input type="tel" id="phone-num" name="phone-num" title="Phone number to contact" autocomplete="tel" required>
+                    </fieldset>
+                    <fieldset>
+                        <label>
+                            Business/Organization's name <span class="required-sign">*</span>
+                        </label>
+                        <input type="text" id="organization" name="organization" title="Organizations or Business's name" autocomplete="organization" required>
+                    </fieldset> 
+                    <fieldset>
+                        <label>
+                            Membership Level 
+                        </label>
+                        <select name="choose-membership" id="choose-membership" title="Choose or Select the M  embership">
+                            <option value="" disabled selected> Choose a Membership... &#9662;</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label>
+                           Description <span class="note">(optional)</span>
+                        </label>
+                        <textarea name="description" id="description" title="Description of your Organization or Business"></textarea>
+                    </fieldset>
+                    <input type="hidden" name="timeStampID" id='timeStamp' />
+                    
+                    <input type="submit" value="Become a Member" title="Become a Member of the Chamber of Commerce">
+                    <p class="symbol"><span class="required-sign">*</span> All sections with this symbol are required</p>
+                </form>
+            </section>
+            <section class="levels-class">
+                <h3>Membership Levels</h3>
+                <div class="membership-container">
+                    <dialog id="membership-details">
+
+                    </dialog>
+                    
+                </div>
+            </section>
+        </div>
+        
+        
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>Heber Chamber of Commerce</h4>
+                <p>540 Burnside Avenue</p>
+                <p>Heber City, UT 84032</p>
+                <p>info@hebercc.org</p>
+                <p>435-503-8991</p>
+            </div>
+            <div class="icons">
+
+            </div>
+            <div class="dynamic">
+                <p>©<span id="currentyear"></span></p>
+                <p> Heber Chamber of Commerce | Heber City Utah </p>
+                
+                <p id="lastModified"></p>
+                
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

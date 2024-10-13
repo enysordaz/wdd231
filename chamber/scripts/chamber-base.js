@@ -1,5 +1,5 @@
 // Menu button
-const hamburgerMenu = document.querySelector('#myButton');
+const hamburgerMenu = document.querySelector('#menu');
 const navElement = document.querySelector('#animateMe');
 
 hamburgerMenu.addEventListener('click', () => {
@@ -9,8 +9,8 @@ hamburgerMenu.addEventListener('click', () => {
 
 // Footer dates and update
 const year = document.querySelector('#currentyear');
-const today = new Date();
-year.innerHTML = today.getFullYear();
+const todayBase = new Date();
+year.innerHTML = todayBase.getFullYear();
 
 // getting the last day modified  
 const lastModified = document.querySelector('#lastModified');

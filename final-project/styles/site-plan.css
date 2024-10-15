@@ -1,0 +1,177 @@
+:root {
+    --background-light: #fff;
+    --background-dark: #040F25;
+    --text-color-light: #ECF6FE;
+    --text-color-dark: #000;
+    --primary-color: #074c8d;
+    --secondary-color: #052758;
+    --accent1-color: #76b1e2;
+    --accent2-color: #a2d2ff;
+    /* change the values below to your chosen font(s) */
+    --heading-elegant-font: "Qwitcher Grypen", cursive;
+    --heading-font: "Outfit", sans-serif;
+    --paragraph-font: "Jost", sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #074c8d;  /* headlines on a white background */ 
+    --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #000000; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #074c8d;
+    --nav-link-color: #fff;
+    --nav-background-color: #052758;
+    --nav-hover-link-color: #052758;
+    --nav-hover-background-color: #76b1e2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+.cursive-letter {
+    font-family: var(--heading-elegant-font);
+    font-size: 80px;
+    font-weight: 200;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+
+header > h1, 
+header > h2,
+header > p {
+  color: var(--headline-color-on-color);
+}
+
+p, 
+div {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+}
+
+p {
+    padding: 1em;
+}
+
+a {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+}
+
+.logo img {
+    width: 200px;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: #999;
+  font-family: var(--paragraph-font);
+}
+
+.colors td{
+  width: 25%;
+  height: 3em;
+  font-family: var(--paragraph-font);
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-color-light);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+  color: var(--text-color-dark);
+}
+
+.accent2{
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+
+}
+nav a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.sitemap img {
+  width: 800px;
+}
+
+.large-view img {
+    width: 900px;
+}
+
+.pt2 {
+    padding-left: 13px;
+}

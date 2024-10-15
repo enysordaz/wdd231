@@ -10,7 +10,7 @@ const weatherSunset = document.querySelector('#sunset');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=40.49&units=imperial&lon=-111.41&appid=3fef4e8fc26d6a0637a69b14d806dfc3'
 
-
+//check the sunrise ad the sunset 
 async function apiFetch() {
     try {
       const response = await fetch(url);

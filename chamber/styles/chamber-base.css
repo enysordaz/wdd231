@@ -647,10 +647,7 @@ dialog button:hover {
     width: 800px;
     height: auto;
     padding: .75rem;
-    transition: transform .5s;
 }
-
-
 
 /*-----FOOTER ELEMENTS---------*/
 footer {

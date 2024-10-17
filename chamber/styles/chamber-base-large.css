@@ -65,7 +65,6 @@
 
     .pictures img:hover {
         padding: 0;
-        transform: scale(1.02);
         box-shadow: 0 0 50px var(--primary-color);
     }
 

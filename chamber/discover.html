@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--  Essential META Tags -->
-    <meta property="og:title" content="Chamber of Commerce Home Page">
+    <meta property="og:title" content="Chamber of Commerce Discover Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://images.unsplash.com/photo-1696912161679-d29f261b38ae?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    <meta property="og:url" content="https://enysordaz.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="">
     <meta name="twitter:card" content="summary_large_image">
     <!--  Non-Essential, But Recommended -->
-    <meta property="og:description" content="Chamber of Commerce - Landing/Home page for the Heber City chamber of Commerce">
+    <meta property="og:description" content="Chamber of Commerce - Discover Heber Valley Chamber of Commerce">
     <!-- Essential for Course Audit-->
     <meta name="author" content="Enys Ordaz Narvaez">
-    <meta name="description" content="Chamber of Commerce - Home Page with the main information.">
-    <title>Chamber of Commerce Landing/Home Page</title>
+    <meta name="description" content="Chamber of Commerce - Discover page with information of Heber City">
+    <title>Chamber of Commerce Discover</title>
     <!-- Styles link-->
     <link rel="stylesheet" href="styles/chamber-base.css">
     <link rel="stylesheet" href="styles/chamber-base-large.css">
     <link rel="icon" href="favicon-heber.ico">
     <script src="scripts/chamber-base.js" defer></script>
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
     <!-- Link to Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,62 +37,55 @@
     </header>
     <nav id="animateMe">
         <ul class="menuLinks">
-            <li class="current-menu-item"><a href="#" title="Home">Home</a></li>
+            <li><a href="index.html" title="Home">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li class="current-menu-item"><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <div class="hero-container">
-            <picture>
-                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
-                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
-                <img src="images/hero-small.webp" alt="Mt. Timpanogos at Heber Utah" width="500" height="250">
-            </picture>
-            <a href="join.html"><button class="action">Become a Member</button></a>
-        </div>
-        <h1>Home</h1>
-        <div class="home-grid">
-            <section class="event-container">
-                <h2>Events</h2>
-            </section>
-            <section class="weather-container">
-                <h2>Current Weather</h2>
-                <div class="weather-info">
-                    <div class="info-img">
-                        <img id="weather-icon" src="" alt=""> <!--Icon is dynamic with JavaScript-->
-                    </div>
-                    <div class="info-text">
-                        <span id="current-temp"></span>
-                        <p id="caption"></p>
-                        <p id="high"></p>
-                        <p id="low"></p>
-                        <p id="humidity"></p>
-                        <p id="sunrise"></p>
-                        <p id="sunset"></p>
-                    </div>
-                    
+        <h1>Discover</h1>
+        <div class="discover-container">
+            <div class="content">
+                <div class="activities">
+                    <h2>Popular Activities</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia molestiae autem tenetur ipsum facere odit fugit, doloribus ut cumque exercitationem explicabo ad, aliquam esse et pariatur dolorum, eius placeat?</p>
                 </div>
-                
-                
-            </section>
-            <section class="forecast-container">
-                <h2>Weather Forcast</h2>
-                <div class="weather-info">
-                    <div class="info-text">
-                        <p id="today"></p>
-                        <p id="next-day"></p>
-                        <p id="two-days"></p>
-                        
-                    </div>
-                    
+                <div class="message">
+
                 </div>
-            </section>
-        </div>
-        <div class="bussiness">
-            <div id="gold-cards">
-                
+                <div class="event">
+                    <h2>Calendar/Events</h2>
+                    <div class="calendar">
+                        <div class="header">
+                            <button id="previewBtn">
+                                <p><</p>
+                            </button>
+                            <div class="monthYear" id="monthYear"></div>
+                            <button id="nextBtn">
+                                <p>></p>
+                            </button>
+                        </div>
+                        <div class="days">
+                            <div class="day">Mon</div>
+                            <div class="day">Tue</div>
+                            <div class="day">Wed</div>
+                            <div class="day">Thu</div>
+                            <div class="day">Fri</div>
+                            <div class="day">Sat</div>
+                            <div class="day">Sun</div>
+                        </div>
+                        <div class="dates" id="dates"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pictures">
+                <img loading="lazy" src="images/skiing.webp" alt="Cross Country Skiing">
+                <img loading="lazy" src="images/hiking.webp" alt="People hiking a mountain">
+                <img loading="lazy" src="images/kayak.webp" alt="Person Kayaking in a lake">
+                <img loading="lazy" src="images/mount-biking.webp" alt="Mountain biker">
+                <img loading="lazy" src="images/hot-ari-balloon.webp" alt="Hot air balloon">
+                <img loading="lazy" src="images/drive.webp" alt="Scenic Drive through the mountain">
             </div>
         </div>
     </main>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Ackerson Eyeare Contact">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.pexels.com/photos/9929043/pexels-photo-9929043.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="Ackerson Eyecare - is pleased to offer a wide range of optometric services, eye care products including eyeglasses, specialty eyewear, frames, and contact lenses. Our staff is happy to help however we can.">
+    <!-- Essential for Course Audit-->
+    <meta name="author" content="Enys Ordaz Narvaez">
+    <meta name="description" content="Ackerson Eyecare  is pleased to offer a wide range of optometric services, eye care products including eyeglasses, specialty eyewear, frames, and contact lenses. Our staff is happy to help however we can.">
+    <title>Ackerson Eyecare Contact Page</title>
+    <!-- Styles link-->
+    <link rel="stylesheet" href="styles/ackersoneyecare.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/ackerson-base.js" defer></script>
+    <script src="scripts/contact-ackerson.js" defer></script>
+    <!-- Link to Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <header class="title">
+        <img src="images/light-logo-mod.webp" alt="Light Logo Version" class="img-logo">
+        <span class="business-logo">Ackerson <span class="heading-normal">Eyecare</span></span>
+        <button id="menu" title="menu button"></button>
+    </header>
+    <nav id="animateMe">
+        <ul class="menuLinks">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="eye-health.html">Eye Health</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li class="current-menu-item"><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Ackerson <span class="heading-normal">EyeCare Contact Page</span></h1>
+        <hr>
+        <div class="contact-page">
+            <section>
+                <h2>Contact Us</h2>
+                <form method="get" action="thanks.html" class="cform">
+                    
+                    <fieldset>
+                        <label>
+                            First Name <span class="required-sign">*</span>
+                        </label>
+                        <input type="text" id="user" name="user" title="Your First name" autocomplete="given-name" required >
+                    </fieldset>
+                    <fieldset>
+                        <label>
+                            Last Name <span class="required-sign">*</span>
+                        </label>
+                        <input type="text" id="last-name" name="last-name" title="Your last name" autocomplete="family-name" required>
+                    </fieldset>
+                    <fieldset>
+                        <label>
+                            E-mail <span class="required-sign">*</span>
+                        </label>
+                        <input type="email" id="email" name="email" title="Email to contact your business" placeholder="name@example.com" autocomplete="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <label>
+                            Phone Number <span class="required-sign">*</span>
+                        </label>
+                        <input type="tel" id="phone-num" name="phone-num" title="Phone number to contact" autocomplete="tel" required>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <label>
+                            Desired Service 
+                        </label>
+                        <select name="choose-service" id="choose-service" title="Choose or Select the Desired Service">
+                            <option value="" disabled selected> Choose a Service... &#9662;</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label>
+                           Details or Message <span class="note">(optional)</span>
+                        </label>
+                        <textarea name="description" id="description" title="Description of your Organization or Business"></textarea>
+                    </fieldset>
+                    <input type="hidden" name="timeStampID" id='timeStamp' />
+                    
+                    <input type="submit" value="Become a Member" title="Become a Member of the Chamber of Commerce">
+                    <p class="symbol"><span class="required-sign">*</span> All sections with this symbol are required</p>
+                </form>
+            </section>
+            <section class="office-info">
+                <div class="schedule">
+                    <h3>Hours</h3>
+                    <div class="days-week">
+                        <p>Monday</p>
+                        <p>Tuesday</p>
+                        <p>Wednesday</p>
+                        <p>Thursday</p>
+                        <p>Friday</p>
+                        <p>Saturday</p>
+                        <p>Sunday</p>
+                    </div>
+                    <div class="hours-av">
+                        <p>8:00am - 5:00pm</p>
+                        <p>8:00am - 5:00pm</p>
+                        <p>12:00pm - 5:00pm</p>
+                        <p>8:00am - 5:00pm</p>
+                        <p>8:00am - 5:00pm</p>
+                        <p>By Appointment</p>
+                        <p>Closed</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="patient-text">
+                    <p>Our patients are our priority and we are available to schedule appointments, answer questions, and ensure you are seeking appropriate medical care for your eyes. The best way to understand and evaluate your eye health is to speak with a qualified optometrist, and we are here to answer all questions for you.</p>
+                    <p>Please call or visit our optometry practice during our hours of operation. You can also email or visit our social media pages any time. We’d love to hear from you!</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Ackerson EyeCare</p>
+                    <p>736 W 100 S</p>
+                    <p>Heber City, UT 84032</p>
+                    <div class="links">
+                        <p>Phone:</p> <a href="tel:435-557-1213">435-557-1213</a>
+                        <p>Email: </p><a href="mailto: staff@hebereye.com">staff@hebereye.com</a>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.5383994138224!2d-111.42876982398437!3d40.50758937142497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874df582ed0af25d%3A0x1a513cc94eef06d7!2sAckerson%20Family%20EyeCare!5e0!3m2!1ses-419!2sus!4v1729725939301!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <a href="index.html">
+                    <img src="images/light-logo-mod.webp" alt="Light version of Logo">
+                </a>
+                <h4>Ackerson Eyecare</h4>
+            </div>
+            <div>
+                <p>736 W 150 S</p>
+                <p>Heber City, UT 84032</p>
+                <a href="mailto: staff@hebereye.com">staff@hebereye.com</a>
+                <a href="tel:435-557-1213">435-557-1213</a>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/fb-icon.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/tweet-icon.png" alt="twitter icon">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="images/inst-icon.png" alt="instagram icon">
+                </a>
+            </div>
+            
+        </div>
+        <div class="dynamic">
+            <p>©<span id="currentyear"></span></p>
+            <p> Ackerson EyeCare | Heber City Utah </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

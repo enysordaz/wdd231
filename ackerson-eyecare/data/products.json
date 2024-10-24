@@ -1,0 +1,136 @@
+{
+    "products": [
+        {
+            "type": "Contact Lense",
+            "name": "Soft Contact Lenses",
+            "description": "Soft contacts are the most common type of contact lenses and account for over 85% of contact lenses dispensed. Traditional soft contact lenses consist of soft plastic polymers and water.",
+            "img": "images/contact-lense.webp"
+        },
+        {
+            "type": "Contact Lense",
+            "name": "Disposable Contact Lenses",
+            "description": "Disposable contact lenses are soft lenses that are discarded on a daily, weekly, bi-weekly, or monthly basis. With regular replacement, protein deposits do not build up.",
+            "img": "images/contact-lense.webp"
+        },
+        {
+            "type": "Contact Lense",
+            "name": "Extended Wear Contact Lenses",
+            "description": "Extended wear contact lenses are gas-permeable or soft lenses designed for up to 30 days of continuous safe wear.",
+            "img": "images/contact-lense.webp"
+        },
+        {
+            "type": "Contact Lense",
+            "name": "Tinted or Cosmetic Contact Lenses",
+            "description": "Tinted contact lenses are soft lenses that enable some patients to change the color of their iris (the colored part of the eye).",
+            "img": "images/contact-lense.webp"
+        },
+        {
+            "type": "Contact Lense",
+            "name": "Rigid Gas Permeable Lenses",
+            "description": " RGP lenses are more pliable, more comfortable, and they allow oxygen to the cornea. Gas permeable lenses also allow more oxygen to the cornea than traditional soft contact lenses.",
+            "img": "images/contact-lense.webp"
+        },
+        {
+            "type": "Contact Lense",
+            "name": "Toric Contact Lenses",
+            "description": "Toric contact lenses help correct astigmatism. They are available in both soft and gas-permeable designs.",
+            "img": "images/contact-lense.webp"
+        },
+        {
+            "type": "Contact Lense",
+            "name": "Bifocal Contact Lenses",
+            "description": "This allows an individual to have clear vision in fields that are near and far. These lenses are available in both soft and gas-permeable designs.",
+            "img": "images/contact-lense.webp"
+        },
+        {
+            "type": "Sunglasses",
+            "name": "Polarized Lenses",
+            "description": "Polarized lenses are helpful in blocking polarized light. This type of light is created by reflected light. When bright light bounces off of horizontal surfaces such as water, cars, snow, or the highway, it can cause intense glare",
+            "img": "images/sunglas.webp"
+        },
+        {
+            "type": "Sunglasses",
+            "name": "Rectangle Sunglasses",
+            "description": "For a classic, more sophisticated shape, you can always rely on the rectangle frame.",
+            "img": "images/sunglas.webp"
+        },
+        {
+            "type": "Sunglasses",
+            "name": "Round Sunglasses",
+            "description": "You can play up the vintage look with thin, round frames, or you can opt for a more contemporary statement with thicker lines.",
+            "img": "images/sunglas.webp"
+        },
+        {
+            "type": "Sunglasses",
+            "name": "Cat-Eye Sunglasses",
+            "description": "The cat-eye shape seems tailor-made for sunglasses. When you combine the mystique of tinted lenses with those upswept corners and a colorful frame, you get sunglasses that cannot be ignored.",
+            "img": "images/sunglas.webp"
+        },
+        {
+            "type": "Sunglasses",
+            "name": "Aviator Sunglasses",
+            "description": "This style often pairs a colorful tint with a sleek metal frame, and its broad lenses provide ample sun protection.",
+            "img": "images/sunglas.webp"
+        },
+        {
+            "type": "Sunglasses",
+            "name": "Geometric Sunglasses",
+            "description": "Geometric sunglasses embrace the oft-forgotten shapes, such as octagons, hexagons, and trapezoids. ",
+            "img": "images/sunglas.webp"
+        },
+        {
+            "type": "Lenses & Frames",
+            "name": "No Glare Lenses",
+            "description": "No-glare, also referred to as an anti-reflective or AR treatment, is specially calculated to eliminate the glare on your lenses and increase the amount of light entering your eye. ",
+            "img": "images/lenses-frames.webp"
+        },
+        {
+            "type": "Lenses & Frames",
+            "name": "Progressive Lenses",
+            "description": "They provide the ability to see at all distances in one seamless lens, including driving at a distance, arm’s length for computer use, and up close for reading.",
+            "img": "images/lenses-frames.webp"
+        },
+        {
+            "type": "Lenses & Frames",
+            "name": "Magnesium Frames",
+            "description": "Lighter than both titanium and aluminum, magnesium is either extracted from the ocean or recovered from minerals such as dolomite or magnetite. ",
+            "img": "images/lenses-frames.webp"
+        },
+        {
+            "type": "Lenses & Frames",
+            "name": "Beryllium Frames",
+            "description": "Beryllium is six times stronger than steel and more than 30 percent lighter than aluminum. Beryllium resists corrosion and tarnish, making it an excellent choice for wearers who have high skin acidity or spend time in or around salt water. ",
+            "img": "images/lenses-frames.webp"
+        },
+        {
+            "type": "Lenses & Frames",
+            "name": "Pure Aluminium Frames",
+            "description": "Pure Aluminum is soft enough to carve. However, mixed with small amounts of alloys, it can provide the strength of steel with only half the weight.",
+            "img": "images/lenses-frames.webp"
+        },
+        {
+            "type": "Lenses & Frames",
+            "name": "Titanium Glasses Frames",
+            "description": "Titanium is a high-strength, lightweight material commonly used in everything from hubcaps to eyewear. Because titanium ranks seventh in abundance among industry elements in the earth’s crust, it is easily accessible",
+            "img": "images/lenses-frames.webp"
+        },
+        {
+            "type": "Lenses & Frames",
+            "name": "Ticral EyeGlass Frames",
+            "description": "Ticral is an alloy of titanium. It is nickel-free and thus hypoallergenic. It’s also extremely lightweight and offers many of the features of titanium without the high cost.",
+            "img": "images/lenses-frames.webp"
+        },
+        {
+            "type": "Lenses & Frames",
+            "name": "Stainless Steel Frames",
+            "description": "Stainless Steel material is an alloy of iron and carbon steel with chromium and other elements. The addition of at least 10 percent chromium makes this alloy less prone to stain or rust, a factor that results in a long life compared to that of traditional steel.",
+            "img": "images/lenses-frames.webp"
+        },
+        {
+            "type": "Lenses & Frames",
+            "name": "Plastic Glasses Frames",
+            "description": "Plastic materials have many style and material options. Easily colored, laminated, patterned, or even layered with fabrics, this material is one of the more creative and workable options.",
+            "img": "images/lenses-frames.webp"
+        }
+    ]
+}

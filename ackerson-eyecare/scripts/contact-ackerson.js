@@ -1,25 +1,25 @@
 //Membership levels array
 const services = [
     {
-        level: '0',
+        type: 'exam',
         number: 0,
         title: 'Eye Exam',
         description: 'Institutions that are created to offer a service or public social benefit instead of generating profit for their founders. Therefore, nonprofits aim to improve the overall quality of life for the community or the natural world.'
     },
-    {
-        level: '1',
+    {   
+        type: 'counsel',
         number: 1,
         title: 'Contact Lenses Counsel',
         description: 'The Bronze Membership Package offers businesses valuable opportunities for growth and influence through targeted networking events, educational resources for improving and expanding your business, and leveraging our valuable partnerships with lawmakers to effect business-friendly regulatory and legal reforms.'
     },
     {
-        level: '2',
+        type: 'exam',
         number: 2,
         title: 'Eye Photograph',
         description: 'The Silver Level Membership Package is a great option for businesses seeking to support a healthy business climate in Heber while teaming alongside fellow mid-size businesses.'
     },
     {
-        level: '3',
+        type: 'counsel',
         number: 3,
         title: 'Glases Info',
         description: 'The Heber Chamber of Commerce values members of all tiers. The Gold Membership Package is a terrific and distinguished option. Invest in a pro-business environment for Heber at one of the top levels of membership. This is a potent opportunity to impact positive change for business in our County.'

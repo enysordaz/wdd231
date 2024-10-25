@@ -1,6 +1,7 @@
 :root {
   --background-light: #fff;
   --background-dark: #040F25;
+  --backdrop-color: #040f2594;
   --text-color-light: #ECF6FE;
   --text-color-dark: #000;
   --primary-color: #074c8d;
@@ -9,12 +10,9 @@
   --accent2-color: #abd6ff;
   --note-color: #3d3d3d;
   --required-color: #6f200e;
-  /* change the values below to your chosen font(s) */
   --heading-elegant-font: "Cormorant Garamond", serif;
   --heading-font: "Outfit", sans-serif;
   --paragraph-font: "Jost", sans-serif;
-
-  /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #074c8d;  /* headlines on a white background */ 
   --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
   --paragraph-color-on-white: #000000; /* paragraph text on a white background */ 
@@ -38,6 +36,8 @@ body {
   padding: 0;
   font-size: 18px;
   text-align: center;
+  background-color: var(--background-light);
+  color: var(--text-color-dark);
 }
 
 button,
@@ -63,7 +63,8 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
+  color: var(--secondary-color);
+  padding-top: 10px;
 }
 
 hr {
@@ -87,7 +88,15 @@ button {
   border: 1px solid var(--accent1-color);
 }
 
-/*-----HEADER------*/
+.main-layout, 
+.contact-page,
+.about-page,
+.eye-health-page,
+.products-page {
+  padding: .75rem;
+}
+
+/*--------------HEADER----------------*/
 header {
   display: grid;
   grid-template-columns: auto 60px;
@@ -129,7 +138,7 @@ header {
   font-family: var(--heading-font);
 }
 
-/* --  Navigation elements  -- */
+/* -----------  Navigation elements  ------------- */
 nav {
   display: grid;
   grid-template-rows: 0fr;
@@ -142,7 +151,6 @@ nav a {
   padding: 1em;
   min-width: 120px;
   text-decoration: none;
-
 }
 
 #menu::before {
@@ -206,7 +214,7 @@ nav.open {
 }
 
 
-/*----------- HOME PAGE-------------*/
+/*-------------------------- HOME PAGE------------------------*/
 .message {
   padding: 2rem;
   margin: .5rem;
@@ -257,7 +265,8 @@ nav.open {
   margin-right: 15px;
 }
 
-.text-info {
+.text-info, 
+.list-info {
   padding-top: 8px;
   padding-bottom: 8px;
   text-transform: capitalize;
@@ -269,6 +278,80 @@ nav.open {
   margin: .5rem;
 }
 
+/*---------------ABOUT PAGE------------------*/
+.doctor img {
+  height: 200px;
+  width: auto;
+}
+
+.images img {
+  width: 500px;
+  height: auto;
+  padding: .75rem;
+}
+
+/*---------------EYE HEALTH PAGE------------------*/
+.list-info {
+  font-family: var(--paragraph-font);
+  list-style: none;
+  text-decoration: none;
+}
+
+.eye-health-container h3{
+  color: var(--secondary-color);
+}
+
+.eye-health-container section {
+  height: 150px;
+  border-radius: 5px;
+  padding-top: 1.5rem;
+  margin: 10px;
+  align-self: center;
+  text-align: center;
+  position: relative;
+  animation: eyes 5s alternate-reverse;
+  background-color: var(--accent2-color);
+}
+
+@keyframes eyes {
+  from {background-color: var(--accent1-color); top: 0px;}
+  to {background-color: var(--accent2-color); top: 200px;}
+}
+
+/* Dialog styling */
+dialog {
+  border: 1px solid var(--primary-color);
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: var(--background-light);
+  box-shadow: 0 0 3rem var(--primary-color);
+  width: 90%;
+  max-width: 700px;
+  align-self: center;
+  text-align: center;
+}
+
+::backdrop {
+  background-color: var(--backdrop-color);
+}
+
+dialog button {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  padding: .5rem 1rem;
+  border: 1px solid var(--required-color);
+  border-radius: 4px;
+  background-color: var(--required-color);
+  color: var(--text-light-color);
+}
+
+dialog button:hover {
+  background-color: #451308;
+  border: 1px solid #411208;
+  box-shadow: 0 0 .25rem var(--primary-color);
+  color: white;
+}
 
 /*------PRODUCTS PAGE----------*/
 #products-cards.grid {
@@ -311,7 +394,7 @@ section > h4 {
 
 .list section {
   display: grid;
-  grid-template-columns: 1.5fr 1.5fr 2fr;
+  grid-template-columns: 1.5fr 2fr;
   margin: 0;
   padding: 0.25rem;
 }
@@ -320,8 +403,17 @@ section > h4 {
   margin: 0 1rem;
 }
 
-.list section img {
+.list img {
   display: none;
+}
+ 
+.list h3 {
+  grid-column: 1/2;
+}
+
+.list h4,
+.list p {
+  grid-column: 2/3;
 }
 
 img {
@@ -336,15 +428,14 @@ img {
   display: flex;
   flex-direction: column;
 }
+.contact-page h2 {
+  text-align: left;
+}
 
 .contact-page h3 {
   color: var(--primary-color);
   text-align: center;
   font-size: 25px;
-}
-
-.contact-page h2 {
-  text-align: left;
 }
 
 .cform {
@@ -359,8 +450,8 @@ img {
 }
 
 .cform fieldset {
-  margin: .5rem 0;
-  padding: .5rem 2%;
+  margin: .25rem 0;
+  padding: .25rem 2%;
   border: none;
 }
 
@@ -368,7 +459,7 @@ img {
   text-align: left;
   font-family: var(--heading-font);
   display: block;
-  padding-top: .5rem;
+  padding-top: .25rem;
   font-size: 25px;
   color: var(--secondary-color);
 }
@@ -404,7 +495,7 @@ img {
   padding: 1rem;
   width: 96%;
   max-width: 400px;
-  margin: -1rem 2% 2rem 2%;
+  margin: .5rem 2% 2rem 2%;
   transition: .3s;
 }
 
@@ -562,15 +653,19 @@ footer .footer-info {
 }
 
 /*-------------- LARGER VIEWS ----------------------*/
-
 @media only screen and (min-width: 38rem) {
+  header {
+    border-bottom: none;
+  }
 
-  .main-layout, 
+  .main-layout,
+  .about-page,
+  .eye-health-page, 
   .contact-page,
   .products-page {
     max-width: 1600px;
     margin: 0 auto;
-    padding: 4em;
+    padding: 4.5em;
   }
   
   .business-logo {
@@ -598,9 +693,11 @@ footer .footer-info {
   }
 
   /*MAIN  PAGE*/
+  .google-map,
   .hero-container img {
     max-height: 500px;
   }
+
   .hero-text {
     border-radius: 5px;
     padding: 2rem;
@@ -617,16 +714,30 @@ footer .footer-info {
     color: var(--headline-color-on-color);
   }
 
+  /*ABOUT PAGE*/
+  .images img:hover {
+    padding: 0;
+    box-shadow: 0 0 50px var(--primary-color);
+  }
+
   /*CONTACT PAGE*/
+  .about-page,
+  .eye-health-page,
   .contact-page{
     display: grid;
-    grid-template-columns:600px auto;
+    grid-template-columns:50% auto;
   }
 
+  .about-information,
+  .health-section,
   .contact-page form {
     grid-column: 1/2;
+    padding: .5rem;
+    text-align: left;
   }
 
+  .images,
+  .eye-health-container,
   .office-info,
   .patient-text {
     grid-column: 2/3;

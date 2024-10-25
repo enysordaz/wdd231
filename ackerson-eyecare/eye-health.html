@@ -7,18 +7,20 @@
     <meta property="og:title" content="Ackerson EyeCare Health">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://images.pexels.com/photos/9929043/pexels-photo-9929043.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://enysordaz.github.io/wdd231/ackerson-eyecare/eye-health.html">
     <meta name="twitter:card" content="summary_large_image">
     <!--  Non-Essential, But Recommended -->
-    <meta property="og:description" content="Ackerson Eyecare - is pleased to offer a wide range of optometric services, eye care products including eyeglasses, specialty eyewear, frames, and contact lenses. Our staff is happy to help however we can.">
+    <meta property="og:description" content="Ackerson Eyecare - Learn about the Health of your Eyes and some of our specialties">
     <!-- Essential for Course Audit-->
     <meta name="author" content="Enys Ordaz Narvaez">
-    <meta name="description" content="Ackerson Eyecare  is pleased to offer a wide range of optometric services, eye care products including eyeglasses, specialty eyewear, frames, and contact lenses. Our staff is happy to help however we can.">
+    <meta name="description" content="Ackerson Eyecare  Learn about the Health of your Eyes and what are some of our specialties">
     <title>Ackerson Eyecare Health Page</title>
     <!-- Styles link-->
     <link rel="stylesheet" href="styles/ackersoneyecare.css">
     <link rel="icon" href="favicon.ico">
+    <!-- Scripts link-->
     <script src="scripts/ackerson-base.js" defer></script>
+    <script src="scripts/eye-health-ackerson.js" defer></script>
     <!-- Link to Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +49,47 @@
         </ul>
     </nav>
     <main>
-
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/eye-hero-lg.webp" media="(min-width: 1000px)">
+                <source srcset="images/eye-hero-med.webp" media="(min-width: 500px)">
+                <img src="images/eye-hero-small.webp" alt="Eye Cover image" width="500" height="250">
+            </picture>
+            <div class="hero-text">
+                <h1>Eye Health</h1>
+                <p>Schedule and Eye Exam with us today!  Our team will work together to evaluate your eyes and provide relevant eye care treatment information</p>
+                <a href="contact-us.html"><button title="Appointment Button">Make an Appointment</button></a>
+            </div>
+        </div>
+        <hr>
+        <div class="eye-health-page">
+            <section class="health-section">
+                <h2>Eye Exams</h2>
+                <p>Unlike a vision screening or other general eye test, comprehensive eye exams evaluate the entire health of the eye. They also help the optometrist or ophthalmologist determine your unique prescription. Comprehensive eye exams should begin as an infant to ensure proper eye and vision development. Ongoing eye health examinations at regular intervals are also important as many eye diseases and vision changes can occur without warning signs.</p>
+                <h3>Why It's Important to get Regular Eye Exams</h3>
+                <p>Comprehensive eye exams often are the first way chronic systemic diseases such as high blood pressure and diabetes are detected. Regular eye exams are the best way to ensure eye health and maintaining your best vision possible.</p>
+                <h4>What does a Comprehensive Eye Exam include?</h4>
+                <ul class="list-info">
+                    <li>Patient history</li>
+                    <li>Visual Acuity</li>
+                    <li>Preliminary Tests</li>
+                    <li>Keratometry/topography</li>
+                    <li>Refraction</li>
+                    <li>Eye Focusing, eye teaming and eye movement testing</li>
+                    <li>Eye Health evaluation</li>
+                    <li>Supplemental testing</li>
+                    <li>Source: <a href="https://www.aoa.org/healthy-eyes/caring-for-your-eyes/eye-exams?sso=y" target="_blank">Americal Optometric Association</a></li>
+                </ul>
+                <p>Please call us with questions, or to schedule an appointment!</p>
+                <a href="contact-us.html">Contact us!</a>
+            </section>
+            <section class="dialog-section">
+                <div class="eye-health-container">
+                    <dialog id="eye-health-details">
+                    </dialog>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footer-container">

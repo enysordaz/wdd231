@@ -15,3 +15,4 @@ year.innerHTML = todayBase.getFullYear();
 // getting the last day modified  
 const lastModified = document.querySelector('#lastModified');
 lastModified.innerHTML = document.lastModified;
+

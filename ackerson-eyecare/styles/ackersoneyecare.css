@@ -52,15 +52,6 @@ p {
   margin: .15rem;
 }
 
-a {
-  color: var(--primary-color);
-}
-
-a:hover {
-  color: var(--accent1-color);
-}
-
-
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--secondary-color);
@@ -81,6 +72,14 @@ button {
   background-color: var(--primary-color);
   color: var(--headline-color-on-color);
   cursor: pointer;
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+a:hover {
+  color: var(--primary-color);
 }
 
 .hero-text button:hover {

@@ -723,6 +723,7 @@ footer .footer-info {
 
   .about-information,
   .health-section,
+  .contact-page h2,
   .contact-page form {
     grid-column: 1/2;
     padding: .5rem;

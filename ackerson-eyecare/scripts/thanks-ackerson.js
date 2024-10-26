@@ -25,5 +25,6 @@ showInfo.innerHTML = `
     <p><strong>Name:</strong> ${show('user')}  ${show('last')}</p>
     <p><strong>Phone:</strong> ${show('phone')}</p>
     <p><strong>Email:</strong> ${show('email')}</p>
-    <p><strong>Service of choice:</strong> ${show('option')}</p> 
+    <p><strong>Service Type:</strong> ${show('choose-service')}</p> 
+    <p><strong>Desired Date:</strong> ${show('adate')}</p>
 `; // review the option display

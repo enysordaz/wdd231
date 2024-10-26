@@ -144,13 +144,6 @@ nav {
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.5s ease-out;
   background-color: var(--nav-background-color);
-  color: var(--paragraph-color-on-color);
-}
-
-nav a {
-  padding: 1em;
-  min-width: 120px;
-  text-decoration: none;
 }
 
 #menu::before {
@@ -161,7 +154,7 @@ nav a {
   font-size: 2rem;
   background: none;
   border: none;
-  color: var(--text-dark-color);
+  color: var(--primary-color);
   cursor: pointer;
   width: 80%;
   text-align: right;
@@ -182,7 +175,7 @@ button:hover {
   background-color: var(--nav-hover-background-color);
 }
 
-li.current-menu-item a {
+.current-menu-item {
   background-color: var(--headline-color-on-white);
 }
 
@@ -212,7 +205,6 @@ nav.open {
   object-fit: cover;
   height: 50%;
 }
-
 
 /*-------------------------- HOME PAGE------------------------*/
 .message {
@@ -469,6 +461,7 @@ img {
 .cform textarea,
 .cform input[type="email"],
 .cform input[type="tel"],
+.cform input[type="date"],
 .cform input[type="submit"] {
   outline: none;
   display: block;
@@ -706,7 +699,7 @@ footer .footer-info {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--paragraph-color-on-color);
     background-color: var(--paragraph-background-hero);
   }
 
